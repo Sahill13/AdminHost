@@ -1,0 +1,92 @@
+/* Main Container */
+.add-admin {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: grid;
+}
+
+/* Admin Form Container */
+.add-admin-container {
+    place-self: center;
+    width: max(25vw, 350px);
+    color: #555;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form Title */
+.add-admin-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+.add-admin-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-admin-inputs label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.add-admin-inputs input,
+.add-admin-inputs select {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.add-admin-inputs input:focus,
+.add-admin-inputs select:focus {
+    border-color: tomato;
+    box-shadow: 0 0 5px rgba(255, 99, 71, 0.5);
+}
+
+/* Submit Button */
+.add-admin-container button {
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    background-color: tomato;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-admin-container button:hover {
+    background-color: #ff6347;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
