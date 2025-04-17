@@ -20,6 +20,7 @@ import AddAdmin from './AdminPanel/AddAdmin';
 const App = () => {
   const url = import.meta.env.VITE_BACKEND_URL ;
   console.log("🔗 Backend URL:", url);
+  console.log("backend URL",import.meta.env.VITE_BACKEND_URL);
   const navigate = useNavigate();
   const location = useLocation(); // ✅ Get the current route
 
